@@ -283,9 +283,11 @@ code {
 
 .vacancies__list-item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px 5px;
+  text-decoration: none;
 }
 
 .vacancies__list-item:hover {
@@ -326,6 +328,9 @@ code {
   }
   .vacancies__list {
     width: 650px;
+  }
+  .vacancies__list-item {
+    align-items: flex-start;
   }
   .vacancies__background {
     width: 700px;
@@ -374,6 +379,9 @@ code {
   .team__photos-grid {
     width: 840px;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .vacancies__list-item {
+    flex-direction: row;
   }
   .vacancies__list-item-text {
     font-size: 18px;
